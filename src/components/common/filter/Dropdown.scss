@@ -1,0 +1,137 @@
+
+.custom-filter{
+  display: flex;
+  @media (max-width: 463px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  button {
+    background: #e9e9e9;
+    width: 170px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: #57bd38;
+      color: white;
+    }
+    span {
+      font-size: 20px;
+      margin-right: 5px;
+    }
+  }
+  .clear-filters {
+    background: red;
+    color: white;
+    width: 90px;
+    margin-left: 30px;
+    @media (max-width: 463px) {
+      margin-left: 0
+    }
+    &:hover {
+      background: red;
+      color: white;
+    }
+  }
+  .gender-filter {
+    margin-right: 40px;
+    @media (max-width: 463px) {
+      margin-bottom: 20px
+    }
+    button {
+      &:hover {
+        background: #e9e9e9;
+        color: black;
+      }
+    }
+  }
+  .filter-input {
+    width: 350px;
+    height: 40px;
+    display: flex;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    max-width: 100%;
+    @media (max-width: 463px) {
+      margin-bottom: 20px
+    }
+    button {
+      width: 150px;
+      height: 100%;
+      border-radius: 0px;
+
+      &:hover {
+        background: #e9e9e9;
+        color: black;
+      }
+    }
+    input {
+      width: calc(100% - 200px);
+      height: 95%;
+      border: none;
+      outline: none;
+      padding-left: 15px;
+    }
+    .custom-filter__filter-input-search {
+      width: 60px;
+    }
+    @media (max-width: 548px) {
+      width: 100%;
+    }
+    @media (max-width: 375px) {
+      button {
+        width: 100px;
+      }
+      input {
+        width: calc(100% - 100px);
+      }
+    }
+  }
+}
+.custom-dropdown{
+  position: relative;
+width: 100%;
+.custom-dropdown__single-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    font-size: 16px;
+    margin-right: 15px;
+  }
+}
+.custom-dropdown__dropdown-list {
+  position: absolute;
+  top: 40px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(219, 220, 224, 0.5);
+  box-shadow: rgb(64 25 109 / 7%) 15px 30px 40px;
+  border-radius: 5px;
+  width: 120px;
+  min-height: 100px;
+  z-index: 100;
+  background: white;
+  padding: 11px 10px 0px 16px;
+  left: -7px;
+
+  p {
+    color: black;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 12px;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+
+    &:hover {
+      color: #57bd38;
+    }
+  }
+}
+}
